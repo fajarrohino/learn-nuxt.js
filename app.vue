@@ -1,6 +1,6 @@
 <template>
   <div>
     <NuxtPage />
-    <p>hello this is page app</p>
+    <h1 class="text-3xl font-bold underline">hello word</h1>
   </div>
 </template>
