@@ -1,0 +1,3 @@
+<template>
+  <FormUpdateShip />
+</template>
