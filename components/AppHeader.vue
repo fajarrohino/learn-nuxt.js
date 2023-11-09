@@ -1,7 +1,7 @@
 <template>
-  <div class="flex justify-between w-full bg-cyan-900 text-white p-5">
+  <div class="flex justify-evenly w-full bg-orange-500 text-white p-5 font-poppins">
     <div>
-      <NuxtLink to="/ship" class="font-bold text-md"> SHIP</NuxtLink>
+      <NuxtLink to="/ship" class="font-bold text-md text-xl hover:underline"> S H I P</NuxtLink>
     </div>
     <!-- <div class="flex gap-5">
       <NuxtLink to="/"> Home</NuxtLink>
@@ -9,7 +9,7 @@
       <NuxtLink to="profile"> Profile</NuxtLink>
     </div> -->
     <div class="flex gap-5">
-      <NuxtLink to="/ship/add" class="font-bold text-md"> Add Ship</NuxtLink>
+      <NuxtLink to="/ship/add" class="font-bold text-md hover:underline"> Add Ship</NuxtLink>
       <!-- <a href="">Login</a> -->
     </div>
   </div>

@@ -1,4 +1,4 @@
 <template>
-  <button type="button" class="rounded-full bg-orange-600 w-40 h-10 text-white hover:bg-orange-800 hover:shadow-md hover:font-bold">Action</button>
+  <button type="button" class="rounded-lg bg-yellow-500 py-0.5 px-4 text-white hover:bg-yellow-600 hover:shadow-md hover:font-bold">Action</button>
 </template>
 <script setup lang="ts"></script>

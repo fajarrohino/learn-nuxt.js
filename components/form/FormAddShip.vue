@@ -1,50 +1,31 @@
 <template>
-  <form action="" class="bg-gray-50 w-96 p-4 rounded-lg">
+  <form class="bg-gray-50 w-1/3 p-5 rounded-lg font-poppins shadow flex-wrap">
+    <h6 class="text-xl font-semibold pb-3 w-full">Tambah Kapal</h6>
     <div class="col-span-full">
-      <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Nama Kapal</label>
+      <label class="block text-sm font-medium leading-6 text-gray-900">Nama Kapal</label>
       <div class="mt-2">
-        <input
-          type="text"
-          autocomplete="street-address"
-          class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          v-model="form.name"
-        />
+        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" v-model="form.name" />
       </div>
     </div>
     <div class="col-span-full">
-      <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Muatan Kapal</label>
+      <label class="block text-sm font-medium leading-6 text-gray-900">Muatan Kapal</label>
       <div class="mt-2">
-        <input
-          type="text"
-          autocomplete="street-address"
-          class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          v-model="form.loads"
-        />
+        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" v-model="form.loads" />
       </div>
     </div>
     <div class="col-span-full">
-      <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Asal Kapal</label>
+      <label class="block text-sm font-medium leading-6 text-gray-900">Asal Kapal</label>
       <div class="mt-2">
-        <input
-          type="text"
-          autocomplete="street-address"
-          class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          v-model="form.origin"
-        />
+        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" v-model="form.origin" />
       </div>
     </div>
     <div class="col-span-full">
-      <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Tujuan Kapal</label>
+      <label class="block text-sm font-medium leading-6 text-gray-900">Tujuan Kapal</label>
       <div class="mt-2">
-        <input
-          type="text"
-          autocomplete="street-address"
-          class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          v-model="form.destination"
-        />
+        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" v-model="form.destination" />
       </div>
     </div>
-    <div class="mt-2 flex justify-center">
+    <div class="mt-5 flex justify-center">
       <ButtonAdd @click="handleAddShip()" />
     </div>
   </form>

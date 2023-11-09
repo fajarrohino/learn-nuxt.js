@@ -1,20 +1,12 @@
 <template>
-  <div class="bg-white shadow-md rounded-lg p-4 w-80" key="{{ data.id }}">
-    <h6 class="text-xl font-semibold pb-2">{{ data.name }}</h6>
-    <p>ID : {{ data.id }}</p>
-    <p>Muatan : {{ data.loads }}</p>
-    <p>Asal Kapal : {{ data.origin }}</p>
-    <p>Tujuan Kapal : {{ data.destination }}</p>
-    <div class="flex gap-5 m-5">
+  <div class="bg-white shadow-md rounded-lg p-4 w-80 font-poppins flex-wrap" key="{{ data.id }}">
+    <h6 class="text-xl font-semibold pb-2 w-full">Kapal {{ data.name }}</h6>
+    <p class="w-full">Muatan : {{ data.loads }}</p>
+    <p class="w-full">Asal Kapal : {{ data.origin }}</p>
+    <p class="w-full">Tujuan Kapal : {{ data.destination }}</p>
+    <div class="flex justify-start gap-4 mt-3">
       <ButtonDelete @click="deleteShip(data.id)" />
       <ButtonAction @click="navigateTo(`/ship/${data.id}`)" />
-      <!-- <NuxtLink :to="`/ship/${data.id}`">
-        <ButtonAction />
-      </NuxtLink> -->
-      <!-- <NuxtLink :to="`/ship/${data.id}`">
-        <ButtonAction />
-      </NuxtLink> -->
-      <!-- <span @click="handleOpenUpdate(data)"> update </span> -->
     </div>
   </div>
 </template>
