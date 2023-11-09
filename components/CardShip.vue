@@ -7,16 +7,19 @@
     <p>Tujuan Kapal : {{ data.destination }}</p>
     <div class="flex gap-5 m-5">
       <ButtonDelete @click="deleteShip(data.id)" />
-      <NuxtLink :to="`/ship/${data.id}`">
+      <ButtonAction @click="navigateTo(`/ship/${data.id}`)" />
+      <!-- <NuxtLink :to="`/ship/${data.id}`">
         <ButtonAction />
-      </NuxtLink>
+      </NuxtLink> -->
+      <!-- <NuxtLink :to="`/ship/${data.id}`">
+        <ButtonAction />
+      </NuxtLink> -->
+      <!-- <span @click="handleOpenUpdate(data)"> update </span> -->
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { deleteShip } from "~/types/state";
-defineProps(["data"]);
 
-const route = useRoute();
-console.log(route.params.id);
+defineProps(["data"]);
 </script>

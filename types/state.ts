@@ -31,6 +31,7 @@ export const addShip = (ship: IShip) => {
 
 export const updateShip = (updateShip: IShip) => {
   const idUpdateShip = ships.findIndex((ship) => ship.id === updateShip.id);
+  console.log(idUpdateShip, updateShip);
   ships[idUpdateShip] = updateShip;
 };
 
