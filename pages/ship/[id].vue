@@ -1,10 +1,7 @@
 <template>
-  <div>
-    <p>Detail Ship</p>
+  <div class="flex justify-center items-center mt-8 w-full flex-col">
     <p>Post ID: {{ $route.params.id }}</p>
+    <FormUpdateShip />
   </div>
 </template>
-<script setup lang="ts">
-const route = useRoute();
-console.log(route.params.id);
-</script>
+<script setup lang="ts"></script>
