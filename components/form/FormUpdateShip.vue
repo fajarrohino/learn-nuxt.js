@@ -1,5 +1,5 @@
 <template>
-  <form class="bg-gray-50 w-1/3 p-5 rounded-lg font-poppins shadow">
+  <form class="bg-gray-50 max-w-screen-md p-5 rounded-lg font-poppins shadow">
     <h6 class="text-xl font-semibold pb-3">Update Kapal {{ form.name }}</h6>
     <div class="flex flex-col">
       <label class="block text-sm font-medium leading-6 text-gray-900">Nama Kapal</label>
